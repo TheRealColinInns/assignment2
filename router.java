@@ -220,7 +220,7 @@ public class router extends mapper{
         attractions.add("Boston Old Town Trolley Tour");
         attractions.add("Comedy Tour of Charlotte");
         List<String> path = myRoute.route("San Diego CA", "San Francisco CA", attractions);
-        System.out.println(myRoute.toString());
+        System.out.println(path.toString());
         System.out.println("+----------------------------------------------+");
         System.out.println("Distance: " + myRoute.getTotalMiles() + " miles");
         System.out.println("Time: " + myRoute.getTotalTime() + " minutes");
