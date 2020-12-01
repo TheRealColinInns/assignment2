@@ -1,0 +1,22 @@
+ Colin Inns
+Data Structures
+Given function header:
+Assignment 2 Design
+List<String> route(String starting_city, String ending_city, List<String> attractions)
+This function takes the user-supplied starting city, ending city and list of attractions. (The list of attractions does not have a particular order.) This function returns a list representing the route the user should take. I am going to return List with String because I want a list of cities.
+● What data structure(s) will you represent the data in the file “attractions.csv”?
+I am going to represent the data in the file attractions.csv in a hashmap that way I can store all the data I need and quickly search through it.
+● What data structure(s) will you represent the data in the file “roads.csv”?
+Most of the data from the roads file will go into a separate class so it can be easily organized into the edges, vecticies and etc. Save the cities into a seperate hashmap so we can quickly check which cities we have visited and what not by using a boolean.
+● What algorithm(s) will you use to find the shortest route from starting city to ending city through all the specified events?
+I plan on using Dijkstra's algorithm a couple of times in order to achieve my goal. First we visit every city using it. Then by using a different hashmap to keep track of distance we can continuously track across the map using the algorithm. It is also important we are going to the correct attractions first so we will need an algorithm to sort through the attractions.
+Functions I plan on using in addition to route: In the main class
+● main(): which will open the files and execute the route function
+● toString(datatype): which will provide a printable string of a desired data type
+● length(city1, city2): which will return the length between specified cities.
+● time(city1, city2): which will return the time between two cities
+In the mapping class
+● A separate public class defining an edge, the space between two cities. With the two
+cities, the time, and distance
+● A function to add a vertex
+● A function to add an edge
